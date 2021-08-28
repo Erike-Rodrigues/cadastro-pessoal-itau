@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Cadastro Pessoal Itaú-Tech</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <h1><b> Cadastro Pessoal</b></h1>
+                <br>
+                <div class="entrada">
+                    <label for="nome">Nome Completo*</label>
+                    <input type="text" name="nome" class="input_usuario" required>
+                </div>
+                <div>
+                    <label for="CPF">CPF*</label>
+                    <input type="text" name="cpf" class="cpf" required>
+                </div>
+                <div>
+                    <label for="rg">RG*</label>
+                    <input type="number" name="rg" class="rg" required>
+                </div>
+
+                <p>Sexo:</p>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
