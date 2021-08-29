@@ -14,7 +14,7 @@
 <body>
     <div id="titulo">
         <h1>Cadastro Pessoal - Itaú tech</h1>
-        <p>Preencha Suas Informações Corretamente</p>
+        <p>Preencha Suas Informações Com Atenção</p>
         <br>
     </div>
 
@@ -30,13 +30,13 @@
 
                 <div class="inputbox">
                     <label for="cpf">CPF*</label>
-                    <input type="text" id="cpf" nome="cpf" placeholder="000.000.000-00" class="inputuser" required>
+                    <input type="text" id="cpf" nome="cpf" placeholder="000.000.000-00" class="inputuser" maxlength="14" onkeyup="mascara_cpf()" required>
                 </div>
                 <br>
 
                 <div class="inputbox">
                     <label for="rg">RG</label>
-                    <input type="text" id="rg" nome="rg" placeholder="0000-000" class="inputuser">
+                    <input type="text" id="rg" nome="rg" placeholder="0000-000" class="inputuser" maxlength="7">
                 </div>
                 <br>
 
@@ -91,19 +91,19 @@
 
                 <div class="inputbox">
                     <label for="cep">CEP</label>
-                    <input type="text" id="cep" nome="cep" placeholder="00000-000" class="inputuser" >
+                    <input type="text" id="cep" nome="cep" placeholder="00000-000" class="inputuser" maxlength="8" >
                 </div>
                 <br>
 
                 <div class="inputbox">
                     <label for="telfixo">Telefone Fixo</label>
-                    <input type="tel" id="telfixo" nome="telfixo" placeholder="____-____" class="inputuser" >
+                    <input type="tel" id="telfixo" nome="telfixo" placeholder="____-____" class="inputuser" maxlength="8">
                 </div>
                 <br>
 
                 <div class="inputbox">
                     <label for="celular">Telefone Celular*</label>
-                    <input type="tel" id="celular" nome="celular" placeholder="(__)_____-_____" class="inputuser"
+                    <input type="tel" id="celular" nome="celular" placeholder="(__)_____-_____" class="inputuser" maxlength="11" 
                         required>
                 </div>
 

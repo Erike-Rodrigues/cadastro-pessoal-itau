@@ -1,3 +1,13 @@
+function mascara_cpf(){
+    let mascara = document.getElementById("cpf")
+    if(cpf.value.length == 3 || cpf.value.length == 7){
+        cpf.value += "."
+
+    } else if(cpf.value.length == 11) {
+        cpf.value += "-"
+    }
+}
+
 function validar() {
     let nome = document.getElementById("nome")
     let cpf = document.getElementById("cpf")
@@ -13,7 +23,7 @@ function validar() {
         return;
     }
 
-    if (cpf.length == "") {
+    if (cpf.value == "") {
         alert("Olá, " + user + ". Favor preencher todos os Campos corretamente! Digite seu CPF");
         cpf.focus();
         return;
