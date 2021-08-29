@@ -2,7 +2,6 @@ function validar() {
     let nome = document.getElementById("nome")
     let cpf = document.getElementById("cpf")
     let rg = document.getElementById("rg")
-    let opcao = document.getElementById("opcao")
     let endereco = document.getElementById("endereco")
     let numero = document.getElementById("numero")
     let celular = document.getElementById("celular")
@@ -15,7 +14,7 @@ function validar() {
         return;
     }
 
-    if (cpf.value == "") {
+    if (cpf.length == "") {
         alert("Olá, " + user + ". Favor preencher todos os Campos corretamente! Digite seu CPF");
         cpf.focus();
         return;
@@ -26,13 +25,6 @@ function validar() {
         rg.focus();
         return;
     }
-
-    if (opcao.value == "Selecione seu Genero") {
-        alert("Favor, Selecionar genero");
-        opcao.focus();
-        return;
-    }
-
 
     if (endereco.value == "") {
         alert("Endereço não informado");
@@ -51,7 +43,7 @@ function validar() {
         celular.focus();
         return;
     }
-    else{
+    else {
         alert("Parabéns " + user + " seus dados foram enviados com sucesso!")
     }
 
