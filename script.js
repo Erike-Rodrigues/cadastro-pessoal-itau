@@ -1,7 +1,6 @@
 function validar() {
     let nome = document.getElementById("nome")
     let cpf = document.getElementById("cpf")
-    let rg = document.getElementById("rg")
     let endereco = document.getElementById("endereco")
     let numero = document.getElementById("numero")
     let celular = document.getElementById("celular")
@@ -20,11 +19,6 @@ function validar() {
         return;
     }
 
-    if (rg.value == "") {
-        alert("RG não informado");
-        rg.focus();
-        return;
-    }
 
     if (endereco.value == "") {
         alert("Endereço não informado");
