@@ -1,143 +1,130 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
-        <title>Cadastro Pessoal Itaú-Tech</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+    <title>Cadastro Pessoal Itaú-Tech</title>
 
-    </head>
+</head>
 
-    <body>
-        <div id="titulo">
-            <h1>Cadastro Pessoal - Itaú tech</h1>
-            <p>Preencha Suas Informações Corretamente</p>
-            <br>
-        </div>
+<body>
+    <div id="titulo">
+        <h1>Cadastro Pessoal - Itaú tech</h1>
+        <p>Preencha Suas Informações Corretamente</p>
+        <br>
+    </div>
 
+    <div>
+        <form id="formulario">
+            <fieldset class="grupo">
+                <div class="inputbox">
+                    <label for="nome">Nome Completo*</label>
+                    <input type="text" id="nome" nome="nome" placeholder="Digite seu nome completo" class="inputuser"
+                        required>
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="cpf">CPF*</label>
+                    <input type="text" id="cpf" nome="cpf" placeholder="000.000.000-00" class="inputuser" required>
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="rg">RG*</label>
+                    <input type="text" id="rg" nome="rg" placeholder="0000-000" class="inputuser" required>
+                </div>
+                <br>
+
+                <div class="imputbox">
+                    <label for="genero">Sexo*</label>
+                    <select id="opcao">
+                        <option>Selecione seu Genero</option>
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                    </select>
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input type="date" id="nascimento" nome="nascimento" class="inputuser">
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="endereco">Endereço*</label>
+                    <input type="text" id="endereco" nome="endereco" placeholder="Digite o seu Endereço"
+                        class="inputuser" required>
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="numero">Número*</label>
+                    <input type="number" id="numero" nome="numero" placeholder="N° de sua Residência" class="inputuser"
+                        required>
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" nome="bairro" placeholder="Digite seu Bairro" class="inputuser">
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" nome="cidade" placeholder="Digite sua Cidade" class="inputuser">
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" nome="estado" placeholder="Digite o seu Estado" class="inputuser">
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" nome="cep" placeholder="00000-000" class="inputuser">
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="telfixo">Telefone Fixo</label>
+                    <input type="tel" id="telfixo" nome="telfixo" placeholder="____-____" class="inputuser">
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="celular">Telefone Celular*</label>
+                    <input type="tel" id="celular" nome="celular" placeholder="(__)_____-_____" class="inputuser"
+                        required>
+                </div>
+
+                <p><small> Campos com * são Obrigatórios.</small></p>
+                <button type="submit" name="submit" id="botao" onclick="validar()"> Enviar Dados</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer id="rodape">
         <div>
-            <form id="formulario">
-                <fieldset class="grupo">
-                    <div class="inputbox">
-                        <label for="nome">Nome Completo*</label>
-                        <input type="text" id="nome" nome="nome"
-                            placeholder="Digite seu nome completo"
-                            class="inputuser"
-                            required>
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="cpf">CPF*</label>
-                        <input type="text" id="cpf" nome="cpf"
-                            placeholder="000.000.000-00" class="inputuser"
-                            required>
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="rg">RG</label>
-                        <input type="text" id="rg" nome="rg"
-                            placeholder="0000-000" class="inputuser" required>
-                    </div>
-                    <br>
-
-                    <div class="imputbox">
-                        <label for="genero">Sexo</label>
-                        <select>
-                            <option>Selecione seu Genero</option>
-                            <option>Feminino</option>
-                            <option>Masculino</option>
-                        </select>
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="nascimento">Data de Nascimento</label>
-                        <input type="date" id="nascimento" nome="nascimento"
-                            class="inputuser">
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="endereco">Endereço*</label>
-                        <input type="text" id="endereco" nome="endereco"
-                            placeholder="Digite o seu Endereço"
-                            class="inputuser" required>
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="numero">Número*</label>
-                        <input type="number" id="numero" nome="numero"
-                            placeholder="N° de sua Residência" class="inputuser"
-                            required>
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="bairro">Bairro</label>
-                        <input type="text" id="bairro" nome="bairro"
-                            placeholder="Digite seu Bairro" class="inputuser">
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="cidade">Cidade</label>
-                        <input type="text" id="cidade" nome="cidade"
-                            placeholder="Digite sua Cidade" class="inputuser">
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="estado">Estado</label>
-                        <input type="text" id="estado" nome="estado"
-                            placeholder="Digite o seu Estado" class="inputuser">
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="cep">CEP</label>
-                        <input type="text" id="cep" nome="cep"
-                            placeholder="00000-000" class="inputuser">
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="telfixo">Telefone Fixo</label>
-                        <input type="tel" id="telfixo" nome="telfixo"
-                            placeholder="____-____" class="inputuser">
-                    </div>
-                    <br>
-
-                    <div class="inputbox">
-                        <label for="celular">Telefone Celular*</label>
-                        <input type="tel" id="celular" nome="celular"
-                            placeholder="(__)_____-_____" class="inputuser"
-                            required>
-                    </div>
-
-                    <p><small> Campos com * são Obrigatórios.</small></p>
-                    <button type="submit" name="submit" id="botao"> Enviar Dados</button>
-                </fieldset>
-            </form>
+            <p>© 2021 ITAÚ UNIBANCO | Todos os direitos reservados</p>
+            <p>Página Criada pelo aluno: Erike Rodrigues</p>
+            <ul>
+                <li><a href="https://itautech.gama.academy/">Programa
+                        Formação Tech</a></li>
+                <li><a href="https://www.gama.academy/">Gama Academy</a></li>
+            </ul>
         </div>
+    </footer>
 
-        <footer id="rodape">
-            <div>
-                <p>© 2021 ITAÚ UNIBANCO | Todos os direitos reservados</p>
-                <p>Página Criada pelo aluno: Erike Rodrigues</p>
-                <ul>
-                    <li><a href="https://itautech.gama.academy/">Programa
-                            Formação Tech</a></li>
-                    <li><a href="https://www.gama.academy/">Gama Academy</a></li>
-                </ul>
-            </div>
-        </footer>
-
-    </body>
+</body>
+<script type="text/javascript" src="script.js"></script>
 
 </html>
