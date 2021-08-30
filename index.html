@@ -14,12 +14,13 @@
 <body>
     <div id="titulo">
         <h1>Cadastro Pessoal - Itaú tech</h1>
-        <p>Preencha Suas Informações Com Atenção</p>
+        <p>Preencha Suas Informações Com Atenção</p> 
         <br>
     </div>
 
     <div>
         <form id="formulario">
+            <p>Dados Pessoais</p>
             <fieldset class="grupo">
                 <div class="inputbox">
                     <label for="nome">Nome Completo*</label>
@@ -42,7 +43,7 @@
 
                 <div class="imputbox">
                     <label for="genero">Sexo</label>
-                    <select id="opcao">
+                    <select>
                         <option>Selecione seu Genero</option>
                         <option>Feminino</option>
                         <option>Masculino</option>
@@ -54,6 +55,12 @@
                 <div class="inputbox">
                     <label for="nascimento">Data de Nascimento</label>
                     <input type="date" id="nascimento" nome="nascimento" class="inputuser" >
+                </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" nome="cep" placeholder="00000-000" class="inputuser" maxlength="8" >
                 </div>
                 <br>
 
@@ -90,12 +97,6 @@
                 <br>
 
                 <div class="inputbox">
-                    <label for="cep">CEP</label>
-                    <input type="text" id="cep" nome="cep" placeholder="00000-000" class="inputuser" maxlength="8" >
-                </div>
-                <br>
-
-                <div class="inputbox">
                     <label for="telfixo">Telefone Fixo</label>
                     <input type="tel" id="telfixo" nome="telfixo" placeholder="____-____" class="inputuser" maxlength="8">
                 </div>
@@ -117,7 +118,7 @@
         <div>
             <p>© 2021 ITAÚ UNIBANCO | Todos os direitos reservados</p>
             <p>Página Criada pelo aluno: Erike Rodrigues</p>
-            <ul>
+            <ul id="links">
                 <li><a href="https://itautech.gama.academy/">Programa
                         Formação Tech</a></li>
                 <li><a href="https://www.gama.academy/">Gama Academy</a></li>

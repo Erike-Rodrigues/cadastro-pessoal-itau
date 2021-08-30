@@ -76,11 +76,16 @@ fieldset
   color: white;
   outline: none;
   padding: 10px;
+  cursor: pointer;
 }
 
 #botao:active
 {
   opacity: 0.6;
+}
+
+#links{
+  list-style: none;
 }
 
 

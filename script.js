@@ -8,6 +8,8 @@ function mascara_cpf(){
     }
 }
 
+
+
 function validar() {
     let nome = document.getElementById("nome")
     let cpf = document.getElementById("cpf")
@@ -48,7 +50,7 @@ function validar() {
         return;
     }
     else {
-        alert("Parabéns " + user + " seus dados foram enviados com sucesso!")
+        alert("Parabéns " + user + ", seus dados foram enviados com sucesso!")
     }
 
 }
